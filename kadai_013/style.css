@@ -75,7 +75,7 @@ PC用のスタイル
     /* 横幅設定 */
     body {
       min-width: 375px;
-      margin: 0 auto 0 auto;
+      margin: 0;
     }
 
     /* PC用ナビゲーション非表示 */
@@ -91,7 +91,7 @@ PC用のスタイル
 
     /* スマホ用ナビゲーション */
     #nav-sp {
-      background-color: #ce993e;
+      background-color: #ce933e;
       position: absolute;
       left: 0;
       top: 0;
@@ -101,19 +101,19 @@ PC用のスタイル
       z-index: 100;
     }
 
+    #nav-sp ul {
+      padding-left: 0;
+    }
+
+    #nav-sp li {
+      list-style: none;
+    }
+
     /* ×ボタン */
     #close {
       position: absolute;
       top: 20px;
       right: 20px;
-    }
-
-    #nav-sp>ul {
-      padding-left: 0;
-    }
-
-    #nav-sp>li {
-      list-style: none;
     }
 
     /* ナビゲーションメニュー用ロゴ */
@@ -122,23 +122,28 @@ PC用のスタイル
     }
 
     /* ナビゲーションのリンク装飾設定 */
-    #nav-sp>a {
+    #nav-sp a {
       display: block;
     }
-    #nav-sp>a:visited {
+
+    #nav-sp a:link {
       color: #ffffff;
     }
-    #nav-sp>a:hover {
+
+    #nav-sp a:visited {
+      color: #ffffff;
+    }
+    #nav-sp a:hover {
       color: #ffffff;
       text-decoration: underline;
     }
-    #nav-sp>a:active {
+    #nav-sp a:active {
       color: #ffffff;
     }
-    #nav-sp>.menu {
+    #nav-sp .menu {
       text-decoration: none;
       display: block;
-      margin: auto 20px auto 20px;
+      margin: 0 20px 0 20px;
       height: 44px;
       font-size: 16px;
       background-image: url("images/arrow.png") ;
